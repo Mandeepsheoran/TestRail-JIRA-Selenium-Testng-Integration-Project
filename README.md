@@ -1,10 +1,10 @@
 # TestRail-JIRA-Selenium-Integration
-This project contains integration between TestRail, JIRA and Selenium where automation test execution results will be pushed to TestRail and defects will be linked with JIRA stories.
+This project contains integration between TestRail, JIRA and Selenium testng where automation test execution results will be pushed to TestRail and defects will be linked with JIRA stories.
 
-We can integrate test management tool like TestRail where our manual test cases are availabel and we execute these cases on sprint basis. Now we can push our automation test results 
-to TestRail. In addition, we can link any failure with the JIRA story after linking JIRA and TestRail.
+Passed test will be updated directed with manual test case in TestRail.
+For failed test case, it will first call JIRA to create a bug and the returned Bug id will be pushed to TestRail which will linked this `bug id with respective test case.
 
-This will help us to find code coverage in test automation using manual and automation test case metrics.
+This will help us to find code coverage in TestRail using manual and automation test case metrics.
 
 Following tools are used to achieve this:
 - Selenium
@@ -12,3 +12,5 @@ Following tools are used to achieve this:
 - Owner's Library
 - Json-Simple
 - AssertJ
+- JIRA client
+- TestRail ApiClient
